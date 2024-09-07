@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: kuroline-eureka-server
+server:
+  port: 8761 # default port
+
+eureka:
+  client:
+    register-with-eureka: false # telling the built-in client not to register itself
+    fetch-registry: false
+
+logging:
+  level:
+    com.netflix.eureka: OFF
+    com.netflix.discovery: OFF
